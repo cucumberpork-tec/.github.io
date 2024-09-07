@@ -162,6 +162,15 @@
     </footer>
 
     <script>
+        // Function to handle the backtick key press
+        document.addEventListener('keydown', function(event) {
+            if (event.key === '`') {
+                event.preventDefault(); // Prevent default action
+                window.location.href = 'https://example.com'; // Replace with the URL you want to navigate to
+            }
+        });
+
+        // Handle the title switch functionality
         const titleSwitch = document.getElementById('titleSwitch');
         const originalTitle = document.title;
         const inboxTitle = 'Inbox';
